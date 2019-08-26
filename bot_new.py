@@ -235,7 +235,7 @@ def main():
         }
 
         ### group functional 
-         requested_schedule = schedules[1] if is_requested_first_group else schedules[2]
+        requested_schedule = schedules[1] if is_requested_first_group else schedules[2]
          ###
         ### single group functional
         # requested_schedule = schedules[1]
