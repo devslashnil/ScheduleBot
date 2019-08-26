@@ -118,9 +118,9 @@ def main():
         last_update_id = last_update['update_id']
         last_chat_id = last_update['message']['chat']['id']
 
-       ### Single group functional
-       # requested_weekday = last_update['message']['text'].strip().lower() 
-       ###
+        ### Single group functional
+        # requested_weekday = last_update['message']['text'].strip().lower() 
+        ###
 
         ### Groups functional
         requested_weekday = last_update['message']['text'][:-1].strip().lower()
@@ -181,7 +181,6 @@ def main():
                                         'Неправильно написан день недели'
                                     ]
                             },
-                                 
                             2: {
                                     'Monday': [
                                             '', 
@@ -237,7 +236,7 @@ def main():
         ### group functional
         #
         requested_schedule = schedules[1] if is_requested_first_group else schedules[2]
-         ###
+        ###
         ### single group functional
         # requested_schedule = schedules[1]
         ###
